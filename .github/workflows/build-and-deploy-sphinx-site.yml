@@ -16,7 +16,7 @@ jobs:
         run: pip install -r ./.devcontainer/requirements.txt
 
       - name: Make static files
-        run: sphinx-build -M html ./source ./build
+        run: sphinx-build -M dirhtml ./source ./build
 
       - name: Package and upload artifact of static files
         uses: actions/upload-pages-artifact@v3
